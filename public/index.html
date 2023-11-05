@@ -3,15 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="fonts.css">
+        <link rel="shortcut icon" href="../src/img/nav-icon.png" type="image/x-icon">
         <title>
             Day 2 of TailwindCSS
         </title>
     </head>
     <body>
-        <div> <!-- main div -->
+        <div class="bg-yellow-100 h-screen"> <!-- main div -->
             <div><!--start nav-->
-                <nav class="w-screen flex flex-row text-2xl font-light shadow-lg p-3">
+                <nav class="w-screen flex flex-row text-2xl font-light shadow-lg p-3 bg-yellow-200">
                     <div class="flex basis-1/2 justify-center">
                         <img class="h-10 w-10 mr-5" src="../src/img/nav-icon.png" alt="nav-icon"> <!--logo-->
                         <h2>Portfolio</h2>
@@ -25,14 +27,15 @@
                     </div>
                 </nav>
             </div><!--end nav-->
-            <div>
-                <!--background-->
-                <div class="h-9/12 w-screen max-w-xs shadow-lg"><!--card 1-->
-                    <h1>
-                        <span>Hello, </span>
-                        <span>I am </span>
-                        <span>Suvam Naskar</span>
-                    </h1>
+            <div><!--background-->
+                <div class="flex flex-col items-center">
+                    <div class="h-[calc(100vh-4rem)] w-[80vw] border-solid border-2 border-red-500 flex"><!--card 1-->
+                        <h1>
+                            <span class="font-yatra text-8xl">Hello, </span>
+                            <span>I am </span>
+                            <span>Suvam Naskar</span>
+                        </h1>
+                    </div>
                 </div>
             </div>
         </div>
